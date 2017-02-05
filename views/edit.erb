@@ -1,0 +1,44 @@
+<form class="form-horizontal" action="/courses/<%= @course[0][0] %>" method ="post">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Edit Course </legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Course Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" value="<%= @course[0][1] %>" class="form-control input-md" required="">
+  <span class="help-block">Ex. Calculus</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="credit">Course Credit</label>  
+  <div class="col-md-4">
+  <input id="credit" name="credit" type="text" value="<%=@course[0][2]%>" class="form-control input-md">
+  <span class="help-block">Total Units</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Course Grade">Course Grade</label>  
+  <div class="col-md-4">
+  <input id="Course Grade" name="grade" type="text" value="<%=@course[0][3]%>" class="form-control input-md">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+

@@ -1,0 +1,13 @@
+<h3>The courses we currently have in the system are:</h3>
+<%@courses.each do |id, name, credit, grade| %>
+<ul>
+<li>
+<a href="/courses/<%= id %>"><%=name%></a>&nbsp
+<div class="btn-group" role="group">
+<a href="/courses/<%=id%>/edit" class="btn btn-info" role="button">Edit</a>&nbsp
+<a href="/courses/<%=id%>/delete" class="btn btn-danger" role="button">Delete</a>
+</div>
+</li>
+</ul>
+<%end%>
+<a href="/home" role="button">Back</a>
